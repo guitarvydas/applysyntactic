@@ -1,0 +1,18 @@
+GhostStars {
+text = macro+
+
+macro =
+  | applySyntactic<ShowPhrase>
+  | any
+  
+ShowPhrase = "Show" filename "at" Coordinate "."
+
+Coordinate = number "x" number
+filename = name
+
+name = nameFirst nameRest*
+nameFirst = letter
+nameRest = "_" | ":" | digit | nameFirst
+number = "-"? digit+
+}
+

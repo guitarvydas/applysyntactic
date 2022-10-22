@@ -1,9 +1,11 @@
-GhostStars {
-text = macro+
+Test {
+src = text+
 
-macro =
-  | applySyntactic<ShowPhrase>
-  | any
+text =
+  | applySyntactic<Macro> -- macro
+  | any                   -- ignore
+  
+Macro = ShowPhrase
   
 ShowPhrase = "Show" filename "at" Coordinate "."
 

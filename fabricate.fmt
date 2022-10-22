@@ -1,9 +1,7 @@
 GhostStars {
-text [macro+] = ‛\n{ onenter:\n[«macro»true]\n}\n’
-
+text [macro+] = ‛\n{ onenter : «macro»}\n’
 macro [x] = ‛«x»’
-  
-ShowPhrase [kShow filename kat Coordinate kperiod] = ‛\n["image","«filename»",«Coordinate»],’
+ShowPhrase [kShow filename kat Coordinate kperiod] = ‛["image","«filename»",«Coordinate»]’
 Coordinate [number1 kx number2] = ‛«number1»,«number2»’
 filename [name] = ‛«name»’
 name [nameFirst nameRest*] = ‛«nameFirst»«nameRest»’

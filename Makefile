@@ -1,5 +1,4 @@
-all: repos run
-
+all: run
 
 install: repos npmstuff
 
@@ -11,6 +10,3 @@ npmstuff:
 
 run: 
 	./fab/fab src.txt GhostStars grammar.ohm fabricate.fmt
-
-runlisp:
-	./fab/fab src.txt GhostStars grammar.ohm lispfabricate.fmt
